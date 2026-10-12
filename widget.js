@@ -36,7 +36,7 @@
     // ============================================================
     const cfg = window.EIAI_CONFIG || {};
     const API_BASE = cfg.apiBase || 'https://chat.edvanceinnovators.org';
-    const LOGO_URL   = cfg.logoUrl   || 'http://localhost:3000/assets/images/logo.png';
+    const LOGO_URL   = cfg.logoUrl   || 'https://chat.edvanceinnovators.org/assets/images/logo.png';
     const PRIMARY    = cfg.primary   || '#38BDF8';
     const SECONDARY  = cfg.secondary || '#0EA5E9';
     const POSITION   = cfg.position === 'bottom-left' ? 'bottom-left' : 'bottom-right';
