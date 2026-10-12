@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chat with EIAI — Edvance Innovators AI</title>
+    <meta name="description" content="Chat with EIAI — AI-powered assistant for funding, experts, project packages, and business growth in developing countries." />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+    <style>
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+        :root {
+            --color-primary: #0A1628;
+            --color-secondary: #142B45;
+            --color-accent-1: #38BDF8;
+            --color-accent-2: #0EA5E9;
+            --color-accent-3: #7DD3FC;
+            --color-accent-4: #60A5FA;
+            --color-text: #F1F5F9;
+            --color-text-muted: #94A3B8;
+            --color-border: rgba(56, 189, 248, 0.12);
+            --font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+        }
+
+        body {
+            font-family: var(--font-family);
+            background: var(--color-primary);
+            color: var(--color-text);
+            line-height: 1.6;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 40px 24px;
+            overflow-x: hidden;
+        }
+
+        .bg-mesh {
+            position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: 0;
+            background: radial-gradient(circle at 20% 30%, rgba(56, 189, 248, 0.10) 0%, transparent 55%),
+                        radial-gradient(circle at 80% 70%, rgba(14, 165, 233, 0.08) 0%, transparent 55%),
+                        var(--color-primary);
+            pointer-events: none;
+        }
+
+        .content {
+            position: relative;
+            z-index: 1;
+            max-width: 700px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: clamp(2rem, 5vw, 3rem);
+            font-weight: 800;
+            margin-bottom: 16px;
+            background: linear-gradient(135deg, var(--color-accent-1), var(--color-accent-4));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        p {
+            font-size: 1.1rem;
+            color: var(--color-text-muted);
+            margin-bottom: 32px;
+        }
+
+        .arrow {
+            font-size: 2.5rem;
+            color: var(--color-accent-1);
+            animation: bounce 2s ease-in-out infinite;
+            margin-bottom: 16px;
+        }
+
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+
+        .hint {
+            background: rgba(56, 189, 248, 0.08);
+            border: 1px solid var(--color-border);
+            border-radius: 12px;
+            padding: 16px 24px;
+            font-size: 0.95rem;
+            color: var(--color-text-muted);
+        }
+
+        .hint strong { color: var(--color-accent-3); }
+
+        .back-link {
+            margin-top: 24px;
+            display: inline-block;
+            color: var(--color-accent-3);
+            text-decoration: none;
+            font-size: 0.9rem;
+            transition: color 0.3s;
+        }
+
+        .back-link:hover { color: white; }
+    </style>
+</head>
+<body>
+
+    <div class="bg-mesh"></div>
+
+    <div class="content">
+        <h1>Chat with EIAI</h1>
+        <p>Our AI assistant is ready to help you with funding, experts, project packages, and growing your business.</p>
+
+        <div class="arrow">
+            <i class="fas fa-arrow-down"></i>
+        </div>
+
+        <div class="hint">
+            Click the <strong>EIAI bubble</strong> in the bottom-right corner to start chatting.
+        </div>
+
+        <a href="https://edvanceinnovators.org" class="back-link">
+            <i class="fas fa-arrow-left"></i> Back to main site
+        </a>
+    </div>
+
+    <!-- ============================================
+         EIAI WIDGET EMBED
+         ============================================ -->
+    <script>
+        window.EIAI_CONFIG = {
+            apiBase: 'https://chat.edvanceinnovators.org',
+            logoUrl: 'https://chat.edvanceinnovators.org/assets/images/logo.png',
+            primary: '#38BDF8',
+            secondary: '#0EA5E9',
+            position: 'bottom-right',
+        };
+    </script>
+    <script src="https://chat.edvanceinnovators.org/widget.js" async></script>
+
+</body>
+</html>
