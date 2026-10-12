@@ -35,7 +35,7 @@
     // CONFIG
     // ============================================================
     const cfg = window.EIAI_CONFIG || {};
-    const API_BASE   = cfg.apiBase   || 'http://localhost:8000';
+    const API_BASE = cfg.apiBase || 'https://chat.edvanceinnovators.org';
     const LOGO_URL   = cfg.logoUrl   || 'http://localhost:3000/assets/images/logo.png';
     const PRIMARY    = cfg.primary   || '#38BDF8';
     const SECONDARY  = cfg.secondary || '#0EA5E9';
