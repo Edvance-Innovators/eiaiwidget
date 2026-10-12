@@ -40,7 +40,7 @@
     const PRIMARY    = cfg.primary   || '#38BDF8';
     const SECONDARY  = cfg.secondary || '#0EA5E9';
     const POSITION   = cfg.position === 'bottom-left' ? 'bottom-left' : 'bottom-right';
-    const GREETING   = cfg.greeting  || "Hi! I'm EIAI — your AI assistant. Ask me about funding, experts, project packages, or growing your business in developing countries.";
+    const GREETING   = cfg.greeting  || "Hi! I'm EIAI \u2014 your AI assistant. Ask me about funding, experts, project packages, or growing your business in developing countries.";
     const Z_INDEX    = cfg.zIndex    || 2147483000;
     const MAX_HISTORY = 20;
 
